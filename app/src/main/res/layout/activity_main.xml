@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.tornado.mytapsellapp2.MainActivity">
+
+    <Button
+        android:id="@+id/btn_request"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        android:text="request ad" />
+
+    <Button
+        android:id="@+id/btn_show_ad"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show add" />
+
+
+
+    <ir.tapsell.sdk.bannerads.TapsellBannerView
+        android:id="@+id/tapsell_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center_horizontal"
+        app:tapsell_banner_type="banner_320x50"
+        app:tapsell_zone_id="5b2ba7255219ec00018835eb" />
+
+
+</LinearLayout>
